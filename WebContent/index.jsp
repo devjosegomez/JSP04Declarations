@@ -11,11 +11,13 @@
 	
 	<!-- Declaration of a method in JSP -->
 
-	<%! String makeItUpperCase(String msg){
-		return msg.toUpperCase();
+	<%! String removeSpaces(String msg){
+		return msg.trim();
 	} %>
 	
 	<!-- Calling method using expressions -->
-	<h2><% out.println(makeItUpperCase("Hi, I was converted to Upper case!!!")); %></h2>
+	<h2><% out.println(removeSpaces("    Hi, all whitespaces were removed  ")); %></h2>
+	
+	
 </body>
 </html>
